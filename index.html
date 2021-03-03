@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Textillate</title>
+  <link rel="stylesheet" href="assets/animate.css">
+  <style>
+
+    .tlt {
+      font-family: arial, Helvetica;
+      font-size: 200px;
+      text-align: center;
+      letter-spacing: 20px;
+      /* padding: 50px; */
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="tlt">TOBY EDGAR</h1>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="assets/jquery.fittext.js"></script>
+  <script src="assets/jquery.lettering.js"></script>
+  <script src="assets/jquery.textillate.js"></script>
+  <script>
+
+  $(function () {
+
+    $('.tlt').textillate({
+       // the default selector to use when detecting multiple texts to animate
+       selector: '.texts',
+       loop: false,
+       minDisplayTime: 2000,
+       initialDelay: 150,
+       autoStart: true,
+       in: {
+         effect: 'fadeIn',
+         delayScale: 1.5,
+         delay: 150,
+         sync: false,
+         shuffle: true,
+         reverse: false,
+         callback: function () {
+           alert('hello');
+         }
+       }
+    });
+    // Textillate ENDS
+
+  });
+  // Function ENDS
+
+
+
+
+
+  </script>
+</body>
+</html>
